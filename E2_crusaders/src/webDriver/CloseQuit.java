@@ -8,13 +8,13 @@ public class CloseQuit {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
-		
+
 		driver.get("https://www.facebook.com/");
-				
+
 		driver.findElement(By.linkText("Meta Pay")).click();
-		
+
 		Thread.sleep(5000);
-		
+
 //		driver.close();
 		driver.quit();
 	}
