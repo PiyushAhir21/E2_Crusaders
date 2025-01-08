@@ -11,9 +11,9 @@ public class Xpath {
 		driver.manage().window().maximize();
 
 		driver.get("https://demowebshop.tricentis.com/");
-		
-//		driver.findElement(By.xpath("//input[@id='small-searchterms]")).sendKeys("hey");
 
+		// Syntax : //tagName[@attributeName = attributeValue]
+//		driver.findElement(By.xpath("//input[@id='small-searchterms]")).sendKeys("hey");
 		driver.findElement(By.xpath("//input[contains(text(),'Log ')]")).sendKeys("hey");
 
 	}
