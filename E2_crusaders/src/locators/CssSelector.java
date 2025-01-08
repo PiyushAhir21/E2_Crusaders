@@ -14,6 +14,7 @@ public class CssSelector {
 		driver.get("https://demowebshop.tricentis.com/");
 
 		Thread.sleep(2000);
+		// Syntax : tagname[attribute_name = attribute_value]
 		WebElement searchField = driver.findElement(By.cssSelector("input[type='text']"));
 		searchField.sendKeys("computers");
 	}
