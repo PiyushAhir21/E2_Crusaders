@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selenium Locator Assignment</title>
+</head>
+<body>
+
+	<!-- Question 1 -->
+	<h2>1. Basic Locator Identification</h2>
+	<p>Write a Selenium script to locate a button element on a webpage
+		using the following locators:</p>
+	<ul>
+		<li>By ID</li>
+		<li>By Name</li>
+		<li>By Class Name</li>
+		<li>By Tag Name</li>
+		<li>By Link Text</li>
+	</ul>
+	<button id="btn1" name="submit" class="btn-class">Idhar</button>
+	<a href="#" id="link1">Udhar</a>
+
+	<!-- Question 2 -->
+	<h2>2. XPath Locator Practice</h2>
+	<p>Write a Selenium script that:</p>
+	<ul>
+		<li>Locates the second row of the table using XPath.</li>
+		<li>Extracts and prints the text of the last column of the third
+			row using XPath.</li>
+	</ul>
+	<table border="1" id="sampleTable">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Country</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Munna bhai</td>
+				<td>29</td>
+				<td>USA</td>
+			</tr>
+			<tr>
+				<td>Jethalal</td>
+				<td>34</td>
+				<td>UK</td>
+			</tr>
+			<tr>
+				<td>Chhota chhatri</td>
+				<td>42</td>
+				<td>Canada</td>
+			</tr>
+			<tr>
+				<td>Kallu kaliya</td>
+				<td>27</td>
+				<td>Australia</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- Question 3 -->
+	<h2>3. CSS Selector Challenge</h2>
+	<p>
+		Create a script that locates a text field using a CSS selector. Then,
+		fill in the text field with a sample input using Selenium’s
+		<code>sendKeys()</code>
+		method. The text field should be located by:
+	</p>
+	<ul>
+		<li>Class Name</li>
+		<li>Attribute Selector</li>
+	</ul>
+	<input type="text" class="text-field" placeholder="Enter text here"
+		id="input1" />
+
+	<!-- Question 4 -->
+	<h2>4. Partial Text Locator with XPath</h2>
+	<p>Write a Selenium script to locate and click on a link with
+		partial text matching. The link’s text is: "View more details." Use
+		XPath to locate the link by partial text.</p>
+	<a href="https://www.example.com/details">View more details</a>
+
+	<!-- Question 5 -->
+	<h2>5. Locator Strategy Optimization</h2>
+	<p>
+		Given a list of product names displayed as
+		<code>span</code>
+		elements in a
+		<code>div</code>
+		container, write a Selenium script that:
+	</p>
+	<ul>
+		<li>Locates the first product using its visible text.</li>
+		<li>Locates all products with a specific class name. (Not now, do this after findElements())</li>
+	</ul>
+	<div class="products">
+		<span class="product">Product 1</span> <span class="product">Product
+			2</span> <span class="product">Product 3</span> <span class="product">Product
+			4</span>
+	</div>
+
+	<!-- Question 6 -->
+	<h2>6. Handling Checkboxes and Radio Buttons</h2>
+	<p>Write a Selenium script to locate and interact with checkboxes
+		and radio buttons on a form:</p>
+	<ul>
+		<li>Locate a checkbox by its ID and click it.</li>
+		<li>Locate a radio button by its name and select it.</li>
+	</ul>
+	<form>
+		<label><input type="checkbox" id="checkbox1"> Accept
+			terms and conditions</label><br> <label><input type="radio"
+			name="gender" value="male"> Male</label><br> <label><input
+			type="radio" name="gender" value="female"> Female</label><br>
+	</form>
+
+	<!-- Question 7 -->
+	<h2>7. Parent-Child Element Navigation with XPath</h2>
+	<p>
+		Write a Selenium script to locate a parent element (a
+		<code>div</code>
+		with a class) and find its child element (a button) using XPath. Then,
+		click the button after navigating from the parent element.
+	</p>
+	<div class="parent">
+		<div class="child">
+			<button id="btnChild">kilik me</button>
+		</div>
+	</div>
+
+	<!-- Question 8 -->
+	<h2>8. Attribute-Based Locator</h2>
+	<p>
+		Write a Selenium script to locate an element based on its attribute
+		value (for example,
+		<code>href</code>
+		,
+		<code>type</code>
+		,
+		<code>placeholder</code>
+		).
+	</p>
+	<ul>
+		<li>Locate a login button by its <code>type</code> attribute.
+		</li>
+		<li>Locate a search field by its <code>placeholder</code>
+			attribute and enter a search term.
+		</li>
+	</ul>
+	<button type="submit" id="loginButton">Login</button>
+	<input type="text" placeholder="Search here" id="searchField" />
+
+</body>
+</html>

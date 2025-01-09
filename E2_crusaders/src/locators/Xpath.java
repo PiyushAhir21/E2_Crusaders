@@ -12,10 +12,14 @@ public class Xpath {
 
 		driver.get("https://demowebshop.tricentis.com/");
 		
+//		xpath by attribute
 //		driver.findElement(By.xpath("//input[@id='small-searchterms]")).sendKeys("hey");
 
+//		xpath by contains()
 		driver.findElement(By.xpath("//input[contains(text(),'Log ')]")).sendKeys("hey");
-
+		
+//		xpath by multiple attributes
+		
 	}
 
 }
