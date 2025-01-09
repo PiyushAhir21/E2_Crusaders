@@ -15,7 +15,9 @@ public class Xpath {
 //		xpath by attribute
 //		driver.findElement(By.xpath("//input[@id='small-searchterms]")).sendKeys("hey");
 
-//		xpath by contains()
+		//		xpath by contains()
+		// Syntax : //tagName[@attributeName = attributeValue]
+//		driver.findElement(By.xpath("//input[@id='small-searchterms]")).sendKeys("hey");
 		driver.findElement(By.xpath("//input[contains(text(),'Log ')]")).sendKeys("hey");
 		
 //		xpath by multiple attributes
