@@ -1,5 +1,7 @@
 package locators;
 
+import java.util.Calendar;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +18,6 @@ public class CssSelector {
 		Thread.sleep(2000);
 		// Syntax : tagname[attribute_name = attribute_value]
 		WebElement searchField = driver.findElement(By.cssSelector("input[type='text']"));
-		searchField.sendKeys("computers");
+		searchField.sendKeys("computers");	
 	}
-
 }
