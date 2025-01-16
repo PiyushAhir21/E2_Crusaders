@@ -1,3 +1,4 @@
+package synchronization;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -17,13 +18,15 @@ public class Synchronization {
 		Thread.sleep(10000);
 		driver.findElement(By.id("Check Delivery")).sendKeys("201301");
 
+//		Implicitly wait
 //		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
+//		Explicit Wait
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("Check")));
 		driver.findElement(By.id("Check")).click();
 		
-
 		driver.close();
 	}
 }
