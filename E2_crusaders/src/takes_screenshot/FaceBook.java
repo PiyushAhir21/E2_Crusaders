@@ -1,4 +1,4 @@
-package takes_screenshot;
+//package takes_screenshot;
 
 import java.io.File;
 import java.io.IOException;
