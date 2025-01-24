@@ -25,11 +25,11 @@ public class Wikipedia {
 //		js.executeScript("window.scrollTo(0,2000)");
 //		Thread.sleep(1000);
 		
-		WebElement webelement = driver.findElement(By.id("searchInput"));
-		WebElement webelement2 = driver.findElement(By.xpath("//button[text()='Search']")); 
+		WebElement searchField = driver.findElement(By.id("searchInput"));
+		WebElement searchBtn = driver.findElement(By.xpath("//button[text()='Search']")); 
 //		js.executeScript("arguments[0].scrollIntoView(false)", webelement);
-		js.executeScript("arguments[0].value=arguments[1]", webelement, "Hey");
-		js.executeScript("arguments[0].click()", webelement2);
+		js.executeScript("arguments[0].value=arguments[1]; ", searchField, "Hey");
+		js.executeScript("arguments[0].click()", searchBtn);
 	}
 
 }
